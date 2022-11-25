@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,6 +29,10 @@
   top: 15px;
   padding: 4px;
 }
+body{
+  background-color: antiquewhite;
+}
+
 </style>
   </head>
   <body>
@@ -41,48 +46,41 @@
       <li class="nav-item active">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
 
     </ul>
   </div>
-  <form class="form-inline">
+  <!-- <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+  </form> -->
 </nav>
 
 
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Success!</strong> Keep Learning !
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
 
 
-<div class="container">
 
-<h1>Your Translated Text - {{ purpose }}</h1>
+<div class="container my-5">
+
+<h1> {{ purpose }}</h1>
 
 <div style="position:relative;" class="bg-light">
 <p>
-    <button id="corner-btn" class="btn btn-outline-primary" onclick="copy()">
-        Copy
-    </button>
+
   <pre id="copy-text" class="p-4"><h2>{{ analyzed_text }}</h2></pre>
+
 </p>
 </div>
 </div>
 <footer class="footer">
   <div class="container">
-    <span class="text-light">&#169 2019 Textutils.in </span>
+    <span class="text-light">&#169  Textutils.in </span>
   </div>
 </footer>
+
+
+
+
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
